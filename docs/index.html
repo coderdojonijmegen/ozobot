@@ -6,14 +6,14 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://coderdojonijmegen.github.io/instructies_voor_mentoren/style.css">
-<script type="text/javascript" src="jquery.min.js.download"></script>
-<script>
-$(document).ready(function(){
-    $('button').click(function(){
-        $('#span'+this.id).text(($('#div'+this.id).is(':visible') ? 'Laat de code zien' : 'Verberg de code'));
-        $('#div'+this.id).toggle(250);
-    });
-});
+	<script type="text/javascript" src="jquery.min.js.download"></script>
+	<script>
+	$(document).ready(function(){
+		$('button').click(function(){
+			$('#span'+this.id).text(($('#div'+this.id).is(':visible') ? 'Laat de code zien' : 'Verberg de code'));
+			$('#div'+this.id).toggle(250);
+		});
+	});
 
 </script>
 </head>
@@ -82,189 +82,214 @@ $(document).ready(function(){
 		<p>
 			Met OzoBlockly kun je het standaard programma van de Ozobot (een lijn volgen en opdrachten uitvoeren bij de kleurencodes) helemaal vervangen door wat jij zelf wilt. Je kunt de Bit laten rijden, bochten laten maken, de lichten laten knipperen en kleuren herkennen. In het voorbeeld hieronder gaan we al deze mogelijkheden samen gebruiken. Voor we met het programma zelf beginnen kijken we eerst even wat je zoal kunt doen in OzoBlockly.<br/><br/>
 		</p>
+		<div style="display:inline-block;vertical-align:top;">
+			<img src="images/ozoblockly_levels.png" height="250px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+		</div>
+		<div style="display:inline-block;width: 500px; word-break: break-word;">
+			<div>Je kunt OzoBlockly gebruiken voor de Bit en Evo robot. Hier werken we met de Bit.<br/><br/></div>
+			<div>Er zijn verschillende niveaus om in te programmeren, van 1 naar 5 krijg je steeds meer opties. Voor dit programma hebben we niveau 4 nodig.<br/><br/></div>
+			<div>Alle mogelijkheden zijn verdeeld over de verschillende menus.</div>
+		</div>
+		<br/><br/>
+		<div>
 			<div style="display:inline-block;vertical-align:top;">
-				<img src="images/ozoblockly_levels.png" height="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+				<img src="images/ozoblockly_menu_01_movement.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
 			</div>
 			<div style="display:inline-block;width: 500px; word-break: break-word;">
-				<div>Je kunt OzoBlockly gebruiken voor de Bit en Evo robot. Hier werken we met de Bit.<br/><br/></div>
-				<div>Er zijn verschillende niveaus om in te programmeren, van 1 naar 5 krijg je steeds meer opties. Voor dit programma hebben we niveau 4 nodig.<br/><br/></div>
-				<div>Alle mogelijkheden zijn verdeeld over de verschillende menus.</div>
+				Beweging: rijden, draaien, instellen van de snelheid van allebei de wielen &eacute;n herkennen van kleur onder de Bit!
 			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_02_linenavigation.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Lijn volgen: bepaal hoe de Bit over lijnen rijdt en wat ie doet bij kruispunten en kleuren op de lijn.
+			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_03_lighteffects.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Licht: zet het licht op de Bit aan of uit en bepaal de kleur van het licht.
+			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_04_timing.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Timing: laat Bit een tijdje wachten.
+			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_05_terminate.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Stoppen: bepaal wat de Bit moet doen als je programma is afgelopen.
+			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_06_logic.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Logica: als ik DIT zie doe dan DAT. Is ZUS gelijk aan ZO? Of juist anders?
+			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_07_loops.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Loops: doe dit tot ik zeg dat je mag stoppen.
+			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_08_math.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Rekenen: soms is het handig om getallen te kunnen gebruiken, vaak samen met de logica.
+			</div>
+		</div>
+		<div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_menu_09_variables.png" width="300px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
+			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Variabelen: je kunt zelf waarden toevoegen aan het programma en deze ook veranderen en gebruiken in logica.
+			</div>
+		</div>
+
+		<div>
 			<br/><br/>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_01_movement.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Beweging: rijden, draaien, instellen van de snelheid van allebei de wielen &eacute;n herkennen van kleur onder de Bit!
-				</div>
+			<div style="display:inline-block;vertical-align:top;">
+				<img src="images/ozoblockly_calibrate_load.png" width="450px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
 			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_02_linenavigation.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Lijn volgen: bepaal hoe de Bit over lijnen rijdt en wat ie doet bij kruispunten en kleuren op de lijn.
-				</div>
-			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_03_lighteffects.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Licht: zet het licht op de Bit aan of uit en bepaal de kleur van het licht.
-				</div>
-			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_04_timing.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Timing: laat Bit een tijdje wachten.
-				</div>
-			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_05_terminate.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Stoppen: bepaal wat de Bit moet doen als je programma is afgelopen.
-				</div>
-			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_06_logic.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Logica: als ik DIT zie doe dan DAT. Is ZUS gelijk aan ZO? Of juist anders?
-				</div>
-			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_07_loops.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Loops: doe dit tot ik zeg dat je mag stoppen.
-				</div>
-			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_08_math.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Rekenen: soms is het handig om getallen te kunnen gebruiken, vaak samen met de logica.
-				</div>
-			</div>
-			<div>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_menu_09_variables.png" width="400px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-					Variabelen: je kunt zelf waarden toevoegen aan het programma en deze ook veranderen en gebruiken in logica.
-				</div>
-			</div>
+			<div style="display:inline-block;width: 500px; word-break: break-word;">
+				Om een programma op de Bit te zetten moet je een aantal stappen doorlopen:
+				<li>De Bit moet eerst afgesteld worden op je beeldscherm door deze op de witte Bit vorm te houden die in beeld komt door linksonder op "FLASHING" te klikken. Calibreren gaat verder zoals op papier (zie de instructies een stukje terug).</li>
+				<li>Daarna kun je het programma op de Bit zetten, hiervoor zet je de Bit aan en houdt deze weer op het witte vlak en klikt dan op "Load Bit". Door de snel veranderende kleuren wordt het programma naar de Bit gestuurd. Als de Bit groen blijft knipperen tot het eind is dit gelukt.</li>
+				<li>Door twee keer op de knop van de Bit te drukken zal nu het programma starten.</li>
 
-			<div>
-                <br/><br/>
-				<div style="display:inline-block;vertical-align:top;">
-					<img src="images/ozoblockly_calibrate_load.png" width="450px" style="padding-right:20px;padding-bottom:5px;" alt="img"/>
-				</div>
-				<div style="display:inline-block;width: 500px; word-break: break-word;">
-                Om een programma op de Bit te zetten moet je een aantal stappen doorlopen:
-                    <li>De Bit moet eerst afgesteld worden op je beeldscherm door deze op de witte Bit vorm te houden die in beeld komt door linksonder op "FLASHING" te klikken. Calibreren gaat verder zoals op papier (zie de instructies een stukje terug).</li>
-                    <li>Daarna kun je het programma op de Bit zetten, hiervoor zet je de Bit aan en houdt deze weer op het witte vlak en klikt dan op "Load Bit". Door de snel veranderende kleuren wordt het programma naar de Bit gestuurd. Als de Bit groen blijft knipperen tot het eind is dit gelukt.</li>
-                    <li>Door twee keer op de knop van de Bit te drukken zal nu het programma starten.</li>
-
-				</div>
 			</div>
+		</div>
 
-			<div>
-				<br/>
-				<h3>3b. Het programma</h3>
-				Het doel van het programma is om de Bit op deze kaart (of iets wat er op lijkt, je mag 'm zelf tekenen) alle drie de kleuren "vindt" en dit daarna een feestje viert.
-				<div><img src="images/ozoblockly_map.png" height="400px" vspace="20px"></div>
-				<br/><br/>
+		<div>
+			<br/>
+			<h3>3b. Het programma</h3>
+			Het doel van het programma is om de Bit op deze kaart (of iets wat er op lijkt, je mag 'm zelf tekenen) alle drie de kleuren "vindt" en dit daarna een feestje viert.
+			<div><img src="images/ozoblockly_map.png" height="300px" vspace="20px"></div>
+
+		</div>
+
+		<div>
+			De belangrijkste delen van het programma zijn:
+			<ol>
+				<li>zorgen dat de Bit binnen de zwarte lijnen blijft,</li>
+				<li>zorgen dat de Bit onthoudt dat ie een kleur gezien heeft, en</li>
+				<li>een feestje bouwen!</li>
+			</ol>
+		</div>
+
+		We gaan nu stap voor stap het programma bouwen.
+		<p>
+            <b><u>De Bit binnen de lijnen houden</u></b><br/>
+			Hiervoor is het nodig om te herkennen wanneer je een lijn tegenkomt, en vervolgens zo te bewegen dat je er niet overheen rijdt. Je hebt hiervoor blokken nodig uit
+			<li>Movement - om de Bit te laten rijden</li>
+			<li>Timing - om de Bit een tijdje anders te laten bewegen als ie een lijn tegenkomt</li>
+			<li>Logica - om te kunnen zeggen 'als je een lijn ziet, doe dan ...'</li>
+			<li>Loops - om de delen hierboven de hele tijd door uit te blijven voeren</li><br/>
+			Speel met de draaisnelheid van elk van de wielen ('wheel speeds') en hoe lang die verschillend moet zijn om de Bit te laten doen wat je wilt. Uiteindelijk zou je programma er ongeveer zo uit kunnen zien:
+
+			<button id="1a"><span id="span1a">Laat de code zien</span></button><br>
+			<div id="div1a" class="div_code" style="display: none;">
+				<img src="images/ozoblockly_binnendelijnen.png" height="400px">
 			</div>
-
-			<div>
-				De belangrijkste delen van het programma zijn:
-				<ol>
-					<li>zorgen dat de Bit binnen de zwarte lijnen blijft,</li>
-					<li>zorgen dat de Bit onthoudt dat ie een kleur gezien heeft, en</li>
-					<li>een feestje bouwen!</li>
-				</ol>
-			</div>
-
-			We gaan nu stap voor stap het programma bouwen.
-			<p>
-				<b>De Bit binnen de lijnen houden</b><br/>
-				Hiervoor is het nodig om te herkennen wanneer je een lijn tegenkomt, en vervolgens zo te bewegen dat je er niet overheen rijdt. Je hebt hiervoor blokken nodig uit
-                <li>Movement - om de Bit te laten rijden</li>
-                <li>Timing - om de Bit een tijdje anders te laten bewegen als ie een lijn tegenkomt</li>
-                <li>Logica - om te kunnen zeggen 'als je een lijn ziet, doe dan ...'</li>
-                <li>Loops - om de delen hierboven de hele tijd door uit te blijven voeren</li>
-                Probeer rustig wat instellingen uit van de draaisnelheid van de wielen ('wheel speeds') en hoe lang je dit doet om ervoor te zorgen dat Bit doet wat je wilt. Uiteindelijk zou je programma er ongeveer zo uit kunnen zien:
-
-            <button id="1a"><span id="span1a">Laat de code zien</span></button><br>
-		    <div id="div1a" class="div_code" style="display: none;">
-		    <img src="images/ozoblockly_binnendelijnen.png" height="400px">
-		    </div>
-
-        </p>
-			<p><b>De kleuren onthouden</b></p>
-            
-			<p><b>Een feestje bouwen</b></p>
-			<p><b>Het uiteindelijke programma</b>
-				<div><img src="images/ozoblockly_all_1.png" height="600px"></div>
-				<div><img src="images/ozoblockly_all_2.png" height="600px"></div>
-			</p>
 		</p>
-		<div id="conclusie">
-			<div class="terug">
-				<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
-			</div>
-			<h2>Conclusie</h2>
-			<p>
-				Je hebt nu hopelijk gezien wat Ozobot allemaal kan, en wat jij allemaal kunt met Ozobot!
-			</p>
-		</div>
 
-		<div id="vervolg">
-			<div class="terug">
-				<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+		<p>
+            <b><u>De kleuren onthouden</u></b><br/>
+			Het is de bedoeling dat de Bit iedere kleur minimaal 1 keer tegenkomt. Om te weten wanneer alle kleuren gevonden zijn moet je onthouden dat een kleur al gezien is. Hiervoor heb je blokken nodig uit
+			<li>Movement - om de kleur waar de Bit overheen rijdt te herkennen</li>
+			<li>Logica - om een waarde voor "kleur gezien" te maken</li><br/>
+            Programmeer de Bit zo dat ie stopt met kleuren zoeken als ze allemaal gevonden zijn. Uiteindelijk zou je programma er ongeveer zo uit kunnen zien:
+
+			<button id="1b"><span id="span1b">Laat de code zien</span></button><br>
+			<div id="div1b" class="div_code" style="display: none;">
+				<img src="images/ozoblockly_kleurgevonden.png" height="150px">
 			</div>
-			<h2>Vervolg</h2>
-			<p>
-				Meer Ozobot materiaal:<br/>
-				<a href="https://portal.ozobot.com/lessons">Lessen van de Ozobot website</a><br/>
-				<a href="http://ozobot-benelux.nl/lesmateriaal/">Ozobot Benelux lesmateriaal</a>
-			</p>
-		</div>
+
+		</p>
 
 
-		<div class="footer">
-			<div class="nijmegen">
-				<a href="https://coderdojo-nijmegen.nl"><img
-					src="https://coderdojo-nijmegen.nl/wp-content/uploads/2014/12/logo_coderdojo_nijmegen-e1419242204527.png" /></a>
-				</div>
-				<div class="github">
-					<a
-					href="https://github.com/coderdojonijmegen/ozobot">
-					<svg aria-hidden="true" class="octicon octicon-mark-github"
-					height="24" version="1.1" viewBox="0 0 16 16" width="24">
-					<path fill-rule="evenodd"
-					d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-				</a>
+        <p>
+            <b><u>Een feestje bouwen</u></b><br/>
+            Laat je fantasie de vrije loop en gebruik beweging en licht om het vinden van alle kleuren feestelijk te vieren! Een voorbeeld:
+
+			<button id="1c"><span id="span1c">Laat de code zien</span></button><br>
+			<div id="div1c" class="div_code" style="display: none;">
+				<img src="images/ozoblockly_feestje.png" height="200px">
 			</div>
-			<a rel="license"
-			href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
-			alt="Creative Commons License" style="border-width: 0"
-			src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Dit
-			werk is gelicenseerd met een <a rel="license"
-			href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
-			Commons Attribution-NonCommercial-ShareAlike 4.0 International
-			License</a>.
+        </p>
+
+        <p><b><u>Alles bij elkaar</u></b><br/>
+            In het programma hieronder komen alle stukjes samen:
+			<button id="1c"><span id="span1c">Laat de code zien</span></button><br>
+			<div id="div1c" class="div_code" style="display: none;">
+				<img src="images/ozoblockly_heleprogramma.png" width="800px">
+			</div>
+		</p>
+	</p>
+	<div id="conclusie">
+		<div class="terug">
+			<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
 		</div>
+		<h2>Conclusie</h2>
+		<p>
+			Je hebt nu hopelijk gezien wat Ozobot allemaal kan, en wat jij allemaal kunt met Ozobot!
+		</p>
 	</div>
+
+	<div id="vervolg">
+		<div class="terug">
+			<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+		</div>
+		<h2>Vervolg</h2>
+		<p>
+			Meer Ozobot materiaal:<br/>
+			<a href="https://portal.ozobot.com/lessons">Lessen van de Ozobot website</a><br/>
+			<a href="http://ozobot-benelux.nl/lesmateriaal/">Ozobot Benelux lesmateriaal</a>
+		</p>
+	</div>
+
+
+	<div class="footer">
+		<div class="nijmegen">
+			<a href="https://coderdojo-nijmegen.nl"><img
+				src="https://coderdojo-nijmegen.nl/wp-content/uploads/2014/12/logo_coderdojo_nijmegen-e1419242204527.png" /></a>
+			</div>
+			<div class="github">
+				<a
+				href="https://github.com/coderdojonijmegen/ozobot">
+				<svg aria-hidden="true" class="octicon octicon-mark-github"
+				height="24" version="1.1" viewBox="0 0 16 16" width="24">
+				<path fill-rule="evenodd"
+				d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+			</a>
+		</div>
+		<a rel="license"
+		href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+		alt="Creative Commons License" style="border-width: 0"
+		src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Dit
+		werk is gelicenseerd met een <a rel="license"
+		href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+		Commons Attribution-NonCommercial-ShareAlike 4.0 International
+		License</a>.
+	</div>
+</div>
 </body>
 </html>
